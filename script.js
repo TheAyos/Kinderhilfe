@@ -32,29 +32,6 @@ setInterval(() => {
 //     }
 // }, 35);
 
-function splitScroll() {
-    const controller = new ScrollMagic.Controller();
-
-    new ScrollMagic.Scene({
-        duration: window.innerHeight * (aboutPageCount - 1),
-        triggerElement: ".about-title",
-        triggerHook: 0,
-    })
-        .setPin(".about-title")
-        // .addIndicators()
-        .addTo(controller);
-
-    new ScrollMagic.Scene({
-        duration: window.innerHeight * (helpPageCount - 1),
-        triggerElement: ".help-title",
-        triggerHook: 0,
-    })
-        .setPin(".help-title")
-        // .addIndicators()
-        .addTo(controller);
-}
-
-// splitScroll();
 
 // *** Scrollbar ***
 const track = document.getElementById("scrollbar-thumb");
