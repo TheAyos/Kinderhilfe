@@ -46,8 +46,23 @@
 .about-pages div > p,
 .help-pages div > p {
     width: 80%;
+    text-align: justify;
     font-size: 18px;
     line-height: 30px;
+}
+
+.about-pages div > p > span,
+.help-pages div > p > span {
+    font-weight: 600;
+}
+
+.about-pages div > img,
+.help-pages div > img {
+    width: 80%;
+    border-radius: 50px;
+    border-radius: 30% 70% 70% 70% / 40% 40% 80% 70%;
+    height: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
 }
 
 .about-pages div:nth-child(1),

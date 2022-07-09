@@ -1,37 +1,15 @@
-// *** Pages michael jackson scroll ***
-const aboutPageCount = 4;
-const helpPageCount = 4;
-
+// *** Scrollsticky michael jackson scroll ***
 const stickyElements = [];
 stickyElements.push(document.querySelector(".about-title"));
 stickyElements.push(document.querySelector(".help-title"));
-
 setInterval(() => {
     let y = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     stickyElements.forEach((e) => {
         const trigger = e.offsetTop;
-        if (y >= trigger) {
-            e.classList.add("stick");
-        } else {
-            if (e.classList.contains("stick")) e.classList.remove("stick");
-        }
+        if (y >= trigger) e.classList.add("stick");
+        else if (e.classList.contains("stick")) e.classList.remove("stick");
     });
 }, 35);
-
-// const abt = document.querySelector(".about-title");
-// const trigger = abt.offsetTop;
-// const blockSize = abt.offsetHeight;
-
-// setInterval(() => {
-//     let y = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-//     if (y >= trigger) {
-//         //&& y <= trigger + blockSize * (aboutPageCount - 1)) {
-//         abt.classList.add("stick");
-//     } else {
-//         if (abt.classList.contains("stick")) abt.classList.remove("stick");
-//     }
-// }, 35);
-
 
 // *** Scrollbar ***
 const track = document.getElementById("scrollbar-thumb");
