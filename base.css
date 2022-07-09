@@ -1,0 +1,32 @@
+/*
+    write clean code
+    add photo cards to "projects" and fill'em with boilerplate
+    work on the footer tryna add (working) contact stuff (preferably w/ vanilla JS)
+    deleguate tasks to people to write textes
+    add scroll down animation cursor 
+    add copyright'n'stuff
+    add who are we ?
+    work on responsivity, get inspiration from christian ce bg !
+*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    /* background-color: #24242a; */
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 300vh;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection {
+    background: var(--color-select);
+}

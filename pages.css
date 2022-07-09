@@ -1,0 +1,76 @@
+.about,
+.help {
+    display: flex;
+    height: calc(var(--about-pages-count) - 1);
+}
+
+.about-title,
+.help-title {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    margin: 0 !important;
+    color: var(--color-orange);
+    text-shadow: 3px 3px 0px var(--color-green), 6px 6px 0px var(--color-blue);
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+}
+
+.about-title > h2,
+.help-title > h2 {
+    font-size: 3rem;
+    background-color: whitesmoke;
+    padding: 0.3rem 0.6rem;
+}
+
+.help-title {
+    color: var(--color-magenta);
+    text-shadow: 3px 3px 0px var(--color-green), 6px 6px 0px var(--color-orange);
+}
+
+.about-pages,
+.help-pages {
+    width: 50%;
+}
+
+.about-pages div,
+.help-pages div {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about-pages div > p,
+.help-pages div > p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.about-pages div:nth-child(1),
+.help-pages div:nth-child(1) {
+    background-color: var(--color-blue);
+}
+
+.about-pages div:nth-child(2),
+.help-pages div:nth-child(2) {
+    background-color: var(--color-orange);
+}
+
+.about-pages div:nth-child(3),
+.help-pages div:nth-child(3) {
+    background-color: var(--color-green);
+}
+
+.about-pages div:nth-child(4),
+.help-pages div:nth-child(4) {
+    background-color: var(--color-magenta);
+}
+
+.stick {
+    position: sticky;
+    top: 0;
+}
