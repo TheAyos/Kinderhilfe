@@ -1,91 +1,85 @@
-.about,
-.help {
+/* @media (min-width: 600px) {
+    .grid__page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 900px) {
+    .grid__page {
+        grid-template-columns: repeat(4, 1fr);
+    }
+} */
+
+section {
     display: flex;
+    width: 100vw;
     height: calc(var(--about-pages-count) - 1);
+    flex-direction: row;
+}
+section.help {
+    flex-direction: row-reverse;
 }
 
-.about-title,
-.help-title {
+section .grid__title {
     display: flex;
+
+    position: sticky;
+    top: 0;
     width: 50%;
     height: 100vh;
-    margin: 0 !important;
+    margin: 0;
     color: var(--color-orange);
+    background-color: bisque;
     text-shadow: 3px 3px 0px var(--color-green), 6px 6px 0px var(--color-blue);
     justify-content: center;
     align-items: center;
-    background-color: bisque;
 }
-
-.about-title > h2,
-.help-title > h2 {
-    font-size: 3rem;
-    background-color: whitesmoke;
-    padding: 0.3rem 0.6rem;
-}
-
-.help-title {
+section#help .grid__title {
     color: var(--color-magenta);
     text-shadow: 3px 3px 0px var(--color-green), 6px 6px 0px var(--color-orange);
 }
+section h1 {
+    padding: 0.3rem 0.6rem;
+    font-size: 3rem;
+    background-color: whitesmoke;
+}
 
-.about-pages,
-.help-pages {
+section .grid__pages {
     width: 50%;
 }
-
-.about-pages div,
-.help-pages div {
+.grid__pages .grid__page {
+    padding: 2rem 0;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 }
-
-.about-pages div > p,
-.help-pages div > p {
+.grid__page p {
     width: 80%;
     text-align: justify;
     font-size: 18px;
     line-height: 30px;
 }
-
-.about-pages div > p > span,
-.help-pages div > p > span {
+.grid__page p span {
     font-weight: 600;
 }
-
-.about-pages div > img,
-.help-pages div > img {
-    width: 80%;
+.grid__page img {
+    width: 60%;
+    height: auto;
     border-radius: 50px;
     border-radius: 30% 70% 70% 70% / 40% 40% 80% 70%;
-    height: auto;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, .5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
-.about-pages div:nth-child(1),
-.help-pages div:nth-child(1) {
+.grid__pages .grid__page:nth-child(1) {
     background-color: var(--color-blue);
 }
-
-.about-pages div:nth-child(2),
-.help-pages div:nth-child(2) {
+.grid__pages .grid__page:nth-child(2) {
     background-color: var(--color-orange);
 }
-
-.about-pages div:nth-child(3),
-.help-pages div:nth-child(3) {
+.grid__pages .grid__page:nth-child(3) {
     background-color: var(--color-green);
 }
-
-.about-pages div:nth-child(4),
-.help-pages div:nth-child(4) {
+.grid__pages .grid__page:nth-child(4) {
     background-color: var(--color-magenta);
-}
-
-.stick {
-    position: sticky;
-    top: 0;
 }

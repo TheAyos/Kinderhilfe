@@ -1,7 +1,7 @@
 // *** Scrollsticky michael jackson scroll ***
 const stickyElements = [];
-stickyElements.push(document.querySelector(".about-title"));
-stickyElements.push(document.querySelector(".help-title"));
+// stickyElements.push(document.querySelector(".about-title"));
+// stickyElements.push(document.querySelector(".help-title"));
 setInterval(() => {
     let y = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     stickyElements.forEach((e) => {
