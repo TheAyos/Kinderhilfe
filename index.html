@@ -5,39 +5,43 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kinderhilfe - Aide humanitaire aux orphelins</title>
+
         <link rel="icon" type="image/x-icon" href="assets/logo.png" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel="stylesheet" href="style.css" />
 
-        <!-- <script src="https://smtpjs.com/v3/smtp.js" defer></script> -->
         <script src="script.js" defer></script>
     </head>
     <body>
-        <div class="scrollbar-track" id="scrollbar-track"></div>
-        <div class="scrollbar-thumb" id="scrollbar-thumb"></div>
+        <!-- <div class="scrollbar-track" id="scrollbar-track"></div>
+        <div class="scrollbar-thumb" id="scrollbar-thumb"></div> -->
 
-        <header id="home">
-            <div class="nav__container">
-                <div class="logo__container">
-                    <img class="logo" src="assets/logo.png" alt="Kinderhilfe Logo" />
-                    <a class="name" href="index.html">Kinderhilfe</a>
-                </div>
-                <nav>
-                    <ul class="nav__links">
-                        <li><a href="#home">Accueil</a></li>
-                        <li><a href="#about">Qui sommes-nous ?</a></li>
-                        <li><a href="#help">Nos actions</a></li>
-                        <li><a href="#help">Aider</a></li>
-                        <li><a href="#gallery">Galerie</a></li>
-                    </ul>
-                </nav>
-                <a class="cta" href="#contact"><button>Contact</button></a>
+        <div class="nav__container">
+            <div class="logo__container responsive__special__placement">
+                <img src="assets/logo.png" alt="Kinderhilfe Logo" />
+                <a class="name" href="index.html">Kinderhilfe</a>
             </div>
 
+            <a class="nav__links" href="#home">Accueil</a>
+            <a class="nav__links" href="#about">Qui sommes-nous ?</a>
+            <a class="nav__links" href="#help">Nos actions</a>
+            <a class="nav__links" href="#help">Aider</a>
+            <a class="nav__links" href="#gallery">Galerie</a>
+
+            <div class="icon__container responsive__special__placement">
+                <a class="nav__links cta responsive__special__placement" href="#contact"><button>Contact</button></a>
+                <a href="javascript:void(0);" class="nav__links icon responsive__special__placement" onclick="navFx()"><i class="fa fa-bars"></i></a>
+            </div>
+        </div>
+
+        <header id="home">
             <div class="banner">
                 <div class="backdrop"></div>
                 <video preload="auto" autoplay="true" loop="true" muted="muted" volume="0" poster="assets/poster.jpg" id="video_loop">

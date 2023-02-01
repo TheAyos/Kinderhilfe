@@ -1,3 +1,9 @@
+function navFx() {
+    const x = document.querySelector(".nav__container");
+    if (x.className === "nav__container") x.className += " responsive";
+    else x.className = "nav__container";
+}
+
 // *** Scrollsticky michael jackson scroll ***
 const stickyElements = [];
 // stickyElements.push(document.querySelector(".about-title"));

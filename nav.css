@@ -1,6 +1,16 @@
-li,
-a,
-button {
+.nav__container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__container a,
+.nav__container button {
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -8,89 +18,104 @@ button {
     font-weight: 500;
 }
 
-.nav__container {
+.logo__container {
     display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 0 10%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 10;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
-
-.nav__container .logo__container {
-    display: flex;
-    margin-right: auto;
-    align-items: center;
-}
-
 .logo__container img {
     height: var(--nav-height);
+    margin: 0 20px;
     transition: transform 0.5s ease;
     cursor: pointer;
 }
-
 .logo__container img:hover {
     transform: rotateZ(45deg);
 }
-
 .logo__container .name {
-    position: relative;
     font-family: "Great Vibes", sans-serif;
     font-size: 36px;
+    margin-right: auto;
     transition: all 300ms ease;
 }
-
 .logo__container .name:hover {
     color: #000;
 }
 
-.nav__container .nav__links {
-    list-style: none;
-}
-
-.nav__links li {
-    display: inline-block;
+.nav__links {
     padding: 0 20px;
-}
-
-.nav__links li a {
-    min-height: 100%;
     line-height: var(--nav-height);
     transition: all 0.3s ease;
-    min-width: 100%;
 }
-
-.nav__links li:hover {
+.nav__links:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
-
-.nav__links li:hover:nth-child(1n) a {
+.nav__links:hover:nth-child(1n) {
     color: var(--color-blue);
 }
-.nav__links li:hover:nth-child(2n) a {
+.nav__links:hover:nth-child(2n) {
     color: var(--color-orange);
 }
-.nav__links li:hover:nth-child(3n) a {
+.nav__links:hover:nth-child(3n) {
     color: var(--color-green);
 }
-.nav__links li:hover:nth-child(4n) a {
+.nav__links:hover:nth-child(4n) {
     color: var(--color-magenta);
 }
 
+.nav__container .cta {
+    padding: 0 25px;
+}
 .nav__container button {
     padding: 9px 25px;
     border: none;
     border-radius: 50px;
     background-color: rgb(39, 182, 221);
     transition: all 0.3s ease;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     cursor: pointer;
 }
-
 .nav__container button:hover {
     background-color: rgba(39, 182, 221, 0.8);
+}
+
+.nav__container .icon {
+    display: none;
+}
+
+.icon__container {
+    display: flex;
+}
+
+@media screen and (max-width: 1300px) {
+    .nav__container > :not(.responsive__special__placement) {
+        display: none;
+    }
+    .nav__container a.icon {
+        display: block;
+    }
+    .nav__container a.cta {
+        margin-left: auto;
+    }
+
+    .nav__container.responsive {
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: left;
+    }
+    .nav__container.responsive .nav__links:not(.responsive__special__placement) {
+        width: 100%;
+        font-size: 20px;
+        line-height: 200%;
+        padding-left: 2rem;
+    }
+    .nav__container.responsive .icon__container {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav__container.responsive a {
+        display: block;
+    }
 }
