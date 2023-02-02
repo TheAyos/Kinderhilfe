@@ -102,12 +102,13 @@
     right: 1rem;
 }
 
-
+/*TODO: potabiliser*/
 
 .slider {
     background: #efeef2;
-    height: 75pt;
+    height: 64px;
     margin: 0 auto;
+    width: 100%;
     overflow: hidden;
     position: relative;
     cursor: default;
@@ -121,11 +122,7 @@
 }
 .slider:after,
 .slider:before {
-    background: linear-gradient(
-        to right,
-        #efeef2 0%,
-        hsla(0, 0%, 100%, 0) 100%
-    );
+    background: linear-gradient(to right, #efeef2 0%, hsla(0, 0%, 100%, 0) 100%);
     content: "";
     height: 75pt;
     position: absolute;
@@ -139,11 +136,7 @@
 }
 .slider:after,
 .slider:before {
-    background: linear-gradient(
-        to right,
-        #efeef2 0%,
-        hsla(0, 0%, 100%, 0) 100%
-    );
+    background: linear-gradient(to right, #efeef2 0%, hsla(0, 0%, 100%, 0) 100%);
     content: "";
     height: 75pt;
     position: absolute;
