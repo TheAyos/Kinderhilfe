@@ -4,19 +4,6 @@ function navFx() {
     else x.className = "nav__container";
 }
 
-// *** Scrollsticky michael jackson scroll ***
-const stickyElements = [];
-// stickyElements.push(document.querySelector(".about-title"));
-// stickyElements.push(document.querySelector(".help-title"));
-setInterval(() => {
-    let y = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-    stickyElements.forEach((e) => {
-        const trigger = e.offsetTop;
-        if (y >= trigger) e.classList.add("stick");
-        else if (e.classList.contains("stick")) e.classList.remove("stick");
-    });
-}, 35);
-
 // *** Scrollbar ***
 const track = document.getElementById("scrollbar-thumb");
 let height = document.body.scrollHeight - window.innerHeight;
@@ -38,16 +25,3 @@ buttons.forEach((b) => {
         delete activeSlide.dataset.active;
     });
 });
-
-// *** Contact ***
-function sendEmail() {
-    Email.send({
-        Host: "smtp.yourisp.com",
-        Username: "username",
-        Password: "password",
-        To: "them@website.com",
-        From: "you@isp.com",
-        Subject: "This is the subject",
-        Body: "And this is the body",
-    }).then((message) => alert(message));
-}

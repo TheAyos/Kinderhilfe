@@ -11,9 +11,18 @@ html {
     scroll-behavior: smooth;
 }
 
+@media screen and (min-width: 50em) {
+    html {
+        font-size: calc(16px + (19 - 16) * (100vw - 400px) / (1200 - 400));
+    }
+}
+
 body {
-    height: 300vh;
+    width: 100vw;
+    margin-right: var(--scrollbar-width);
+    /* height: 300vh; */
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 ::selection {
