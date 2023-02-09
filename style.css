@@ -36,6 +36,22 @@ header h1 {
     text-shadow: 3px 5px 0 rgba(0, 0, 0, 0.3);
     border-bottom: 4px dashed var(--color-orange);
 }
+@media screen and (max-width: 700px) {
+    header h1::before{
+        content: "Kinderhilfe";
+        font-size: 1.8rem;
+        border-bottom: 4px dashed var(--color-orange);
+    }
+    header h1 {
+        font-size: 0;
+        border-bottom: none;
+    }
+    header h1::after {
+        content: "un projet caritatif";
+        font-size: 1.8rem;
+        border-bottom: 4px dashed var(--color-orange);
+    }
+}
 header h1 span {
     font-family: "Great Vibes", sans-serif;
 }

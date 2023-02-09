@@ -104,87 +104,26 @@
 
 /*TODO: potabiliser*/
 
-.slider {
-    background: #efeef2;
-    height: 64px;
-    margin: 0 auto;
+.brand-carousel {
     width: 100%;
-    overflow: hidden;
-    position: relative;
-    cursor: default;
-    user-select: none;
-    touch-action: none;
+    height: 8rem;
+    background: aliceblue;
+    margin-bottom: 1rem;
 }
-
-.slider:before {
-    left: 0;
-    top: 0;
+.owl-item {
+    height: 100% !important;
 }
-.slider:after,
-.slider:before {
-    background: linear-gradient(to right, #efeef2 0%, hsla(0, 0%, 100%, 0) 100%);
-    content: "";
-    height: 75pt;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+.single-logo {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
-.slider:after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+.owl-item img {
+    max-width: 200px !important;
+    /* max-height: 100% !important; */
+    object-fit: contain !important;
+    background: aliceblue;
 }
-.slider:after,
-.slider:before {
-    background: linear-gradient(to right, #efeef2 0%, hsla(0, 0%, 100%, 0) 100%);
-    content: "";
-    height: 75pt;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
-}
-
-.slider .slide-track-1 {
-    animation: scroll-l 30s linear infinite;
-    display: flex;
-    width: 3500px;
-}
-.slider .slide-track-2 {
-    animation: scroll-r 30s linear infinite;
-    display: flex;
-    width: 3500px;
-}
-
-.slider .slide {
-    height: 75pt;
-    width: 250px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-.slider .slide img {
-    width: 180px;
-    padding: 1pc;
-    vertical-align: middle;
-    margin: 0 auto;
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-}
-
-@keyframes scroll-l {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
-}
-@keyframes scroll-r {
-    100% {
-        transform: translateX(0);
-    }
-    0% {
-        transform: translateX(calc(-250px * 7));
-    }
+.owl-dots {
+    display: none;
 }
