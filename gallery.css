@@ -127,7 +127,10 @@
     margin-bottom: 1rem;
 }
 .owl-item {
+    display: flex !important;
     height: 100% !important;
+    justify-content: center;
+    align-items: center;
 }
 .single-logo {
     display: flex !important;
@@ -135,6 +138,7 @@
     align-items: center !important;
 }
 .owl-item img {
+    height: 100%;
     background: transparent;
     max-height: 8rem !important;
     -o-object-fit: contain !important;
@@ -142,4 +146,25 @@
 }
 .owl-dots {
     display: none;
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+}
+.owl-carousel .owl-item {
+    display: flex;
+    flex: 1 0 auto;
+}
+.owl-carousel .caption {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+}
+.owl-carousel .flex-text {
+    flex-grow: 1;
+}
+.owl-carousel .thumbnail {
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
 }
