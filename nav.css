@@ -125,6 +125,7 @@
     }
     .nav__container a.icon {
         display: block;
+        width: 4rem;
     }
 
     .nav__container.responsive {
