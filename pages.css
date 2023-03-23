@@ -46,6 +46,7 @@ section .grid__pages {
     width: 80%;
     text-align: justify;
     font-size: 18px;
+    font-size: calc(16px + (18 - 14) * (100vw - 300px) / (1600 - 300));
     line-height: 30px;
 }
 .grid__page p span {
