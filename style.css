@@ -11,7 +11,9 @@
     --color-blue: #52c8e8;
     --color-orange: #f17a22;
     --color-green: #5bef11;
-    --color-magenta: #fa1497;
+    --color-green: #5bef00;
+    /* --color-magenta: #fa1497; */
+    --color-magenta: #fa1470;
     --color-select: #ffc7b8;
     --scrollbar-width: 11px;
     --banner_video_blur: 4px;

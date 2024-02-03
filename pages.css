@@ -50,6 +50,7 @@ section .grid__pages {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    backdrop-filter: blur(10px);
 }
 .grid__page .p__container {
     width: 80%;
