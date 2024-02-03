@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap&text=AyoubgzlRéisaprÉèvdTmncLt20-3");
 @import "base.css";
 @import "nav.css";
 @import "pages.css";
@@ -74,13 +75,7 @@ header .p__container {
     word-spacing: 2px;
 }
 
-footer {
-    display: flex;
-    height: 100vh;
-    background-color: bisque;
-    justify-content: center;
-    align-items: center;
-}
+/* footer in contact.css */
 
 header div.backdrop {
     position: absolute;
