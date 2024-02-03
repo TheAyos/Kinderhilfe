@@ -57,7 +57,7 @@ header h1 span {
     }
 }
 
-header p {
+header .p__container {
     /* margin: 3rem; */
     padding: 0.5rem 1rem;
     border: 6px dotted var(--color-select);

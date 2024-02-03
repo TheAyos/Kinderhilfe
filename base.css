@@ -1,4 +1,4 @@
-*,
+*:not(ul),
 *::after,
 *::before {
     margin: 0;
@@ -35,4 +35,3 @@ body {
 ::selection {
     background: var(--color-select);
 }
-
