@@ -26,8 +26,6 @@ buttons.forEach((b) => {
     });
 });
 
-/* Owl Carousel 2 All Settings. See the bottom for how to use equal heights with matchHeight  plugin */
-
 jQuery(document).ready(function ($) {
     var owl = $(".brand-carousel");
 
@@ -90,7 +88,4 @@ jQuery(document).ready(function ($) {
     $(".prev").click(function () {
         owl.trigger("owl.prev");
     });
-
-    /* Equal Heights using javascript */
-    // $('.latest-blog-posts .thumbnail.item').matchHeight();
 });

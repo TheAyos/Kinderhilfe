@@ -1,7 +1,7 @@
 .pages section {
     display: flex;
     width: 100vw;
-    height: calc(var(--about-pages-count) - 1);
+    min-height: var(--about-pages-count);
     flex-direction: row;
 }
 .pages section:nth-child(2n) {

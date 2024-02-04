@@ -9,17 +9,18 @@
         <link rel="icon" type="image/x-icon" href="assets/logo.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" />
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
 
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js" defer></script>
+        <script src="script.min.js" defer></script>
     </head>
 
     <body>
@@ -48,10 +49,12 @@
 
         <header id="home">
             <div class="backdrop"></div>
-            <video preload="auto" autoplay="true" loop="true" muted="muted" volume="0" poster="assets/poster.jpg" id="video_loop">
-                <source src="assets/banner_loop.mp4" type="video/mp4" />
-                <source src="assets/banner_loop.webm" type="video/webm" />
-            </video>
+            <div class="video__container">
+                <video preload="auto" autoplay="true" loop="true" muted="muted" volume="0" poster="assets/poster.jpg" id="video_loop">
+                    <source type="video/webm" src="assets/banner.webm" />
+                    <source type="video/mp4" src="assets/banner.mp4" />
+                </video>
+            </div>
 
             <div class="title__fix">
                 <h1><span>Kinderhilfe</span>,</h1>
@@ -67,15 +70,6 @@
                     <li>assurer leur éducation en vue de les préparer à une insertion sociale et professionnelle et les aider à devenir des adultes autonomes et épanouis.</li>
                 </ul>
             </div>
-            <!-- <p>
-                Dans le cadre de l'atelier Kinderhilfe, le Lycée Lyautey est impliqué depuis 2016 dans un projet caritatif au profit de l'orphelinat de garçons Dar Al Atfal de Sidi Bernoussi, géré par
-                l'Association de Bienfaisance de Sidi Bernoussi, qui compte près de 300 pensionnaires âgés de 14 à 35 ans. Il s'agit pour la plupart d'entre eux d'enfants abandonnés. L'atelier
-                s'inscrit dans l'éthique éducative du Lycée Lyautey qui accorde une place importante à l'éducation à la citoyenneté des élèves et à la promotion de leur engagement social et
-                humanitaire. Cet atelier regroupe, sous la responsabilité de Pascale Chaumond, professeur d'allemand, une cinquantaine d'élèves lycéens, qui s'impliquent dans des actions citoyennes et
-                solidaires visant à améliorer les conditions de vie des orphelins de Bernoussi. Ces projets ne pourraient voir le jour sans le soutien de nombreux partenaires économiques et parents
-                d'élèves.
-            </p> -->
-
             <div class="partner__container">
                 <h1>Nos partenaires</h1>
                 <div class="brand-carousel owl-carousel">
@@ -181,7 +175,6 @@
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/eK6YywA0-NU"
-                                title="YouTube video player"
                                 frameborder="0"
                                 allow="encrypted-media; picture-in-picture; web-share"
                                 allowfullscreen
