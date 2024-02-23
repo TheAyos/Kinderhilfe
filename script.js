@@ -8,7 +8,7 @@ function navFx() {
 const track = document.getElementById("scrollbar-thumb");
 let height = document.body.scrollHeight - window.innerHeight;
 setInterval(() => {
-    let thumbHeight = (window.pageYOffset / height) * 100;
+    let thumbHeight = (window.scrollY / height) * 100;
     track.style.height = thumbHeight + "%";
 }, 35);
 
